@@ -270,13 +270,17 @@
 
 .title {
   font-family: 'BlueScreenPersonalUse', 'Courier New', monospace;
-  font-size: 8rem;
+  font-size: clamp(3.2rem, 12.8vw, 8rem);
   color: white;
   margin: 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   font-weight: normal;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 90vw;
+  line-height: 1.2;
 }
 
 .bottom-text {
@@ -678,7 +682,7 @@
   display: block;
   position: relative;
   padding-bottom: 0.72em;
-  font-size: 4vw;
+  font-size: 8vw;
   line-height: 0.95;
 }
 
@@ -838,6 +842,7 @@
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease;
+  user-select: none;
 }
 
 .game-card:hover {
