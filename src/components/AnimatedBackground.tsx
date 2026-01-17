@@ -12,9 +12,9 @@ class TouchTexture {
   speed: number
   trail: Array<any>
   last: any
-  canvas: HTMLCanvasElement
-  ctx: CanvasRenderingContext2D
-  texture: THREE.Texture
+  canvas!: HTMLCanvasElement
+  ctx!: CanvasRenderingContext2D
+  texture!: THREE.Texture
 
   constructor() {
     this.size = 64
